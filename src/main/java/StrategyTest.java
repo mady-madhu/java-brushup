@@ -1,5 +1,3 @@
-package org.example;
-
 import org.example.strategy.SortingContext;
 import org.example.strategy.impl.MergeSort;
 import org.example.strategy.impl.SelectionSort;

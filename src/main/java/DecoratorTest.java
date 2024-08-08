@@ -1,6 +1,3 @@
-package org.example;
-
-
 import org.example.decorator.abstact.BubbleLights;
 import org.example.decorator.impl.ChristmasTreeImpl;
 import org.example.decorator.inteface.ChristmasTree;
