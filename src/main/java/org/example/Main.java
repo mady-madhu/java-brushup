@@ -1,16 +1,12 @@
 package org.example;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.time.ZoneOffset;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
-    public static void main(String[] args) throws Exception, IllegalMonitorStateException {
 
+    public static void main(String[] args) {
         List<String> fruits = Arrays.
                 asList("apple", "banana", "apple", "orange",
                         "banana", "apple", "grape", "orange",
@@ -35,9 +31,5 @@ public class Main {
 
         System.out.println(str.substring(0,3));
         System.out.println(str.substring(3));
-
-
     }
-
-
 }
