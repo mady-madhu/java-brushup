@@ -8,8 +8,6 @@ public class SystemObj {
 
     private static SystemObj systemObj= null;
 
-    private HashMap props;
-
     public static SystemObj getSystemObj() {
         if(systemObj==null){
             systemObj = new SystemObj();
@@ -20,7 +18,6 @@ public class SystemObj {
     public Properties getProperties(){
         return System.getProperties();
     }
-
 
     public Map<String, String> getEnv(){
         return System.getenv();
