@@ -5,7 +5,7 @@ import org.example.strategy.impl.SelectionSort;
 public class StrategyTest {
 
     public static void main(String[] args) {
-        //set the context
+        //create the context
         SortingContext context = new SortingContext();
 
         //add the strategy
