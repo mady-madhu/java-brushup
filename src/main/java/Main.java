@@ -30,6 +30,8 @@ public class Main {
         System.out.println(str.substring(0,3));
         System.out.println(str.substring(3));
 
-
+        int x=5;
+        int y = ++x * 10;
+        System.out.println(y);
     }
 }

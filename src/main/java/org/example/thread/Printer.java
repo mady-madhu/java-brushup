@@ -11,7 +11,7 @@ public class Printer {
                 Thread.currentThread().interrupt();
             }
         }
-        System.out.print(Thread.currentThread().getName() + ":" + number);
+        System.out.println(Thread.currentThread().getName() + ":" + number);
         isOdd = false;
         notify();
     }
