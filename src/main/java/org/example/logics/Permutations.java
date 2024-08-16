@@ -3,7 +3,7 @@ package org.example.logics;
 public class Permutations {
 
     public static void main(String[] args) {
-        String str = "abc ";
+        String str = "abc";
         String ch = "";
 
         permutations(str, ch);
