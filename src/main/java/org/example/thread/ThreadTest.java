@@ -1,3 +1,5 @@
+package org.example.thread;
+
 import org.example.thread.Printer;
 import org.example.thread.TaskEvenOdd;
 

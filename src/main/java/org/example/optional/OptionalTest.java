@@ -16,6 +16,7 @@ public class OptionalTest {
 
         Optional<String> helloNullable = Optional.ofNullable(null);
         System.out.println(helloNullable);
+        System.out.println(helloNullable.isEmpty());
 
 
         Optional<String> helloNull = Optional.of(null);

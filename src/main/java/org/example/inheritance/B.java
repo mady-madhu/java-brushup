@@ -1,9 +1,12 @@
-package org.example;
+package org.example.inheritance;
+
+import org.example.inheritance.A;
 
 public class B extends A {
 
-    B(int i){
 
+    public B(int i) {
+        super(i);
     }
 
     @Override

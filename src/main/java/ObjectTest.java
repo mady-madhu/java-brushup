@@ -1,6 +1,7 @@
-package org.example;
+import org.example.inheritance.A;
+import org.example.inheritance.B;
 
-public class Employee {
+public class ObjectTest {
 static
     {
         System.out.println("static");
@@ -9,7 +10,7 @@ static
         System.out.println("instance block");
     }
 
-    public Employee(int i){
+    public ObjectTest(int i){
         System.out.println("int constructor");
     }
 
@@ -22,10 +23,10 @@ static
     }
 
     public static void main(String[] args) {
-        Employee e = new Employee(10);
+        ObjectTest e = new ObjectTest(10);
         e.m1(null);
 
-        A a = new A();
+        A a = new A(1);
         a.m1();
         A a1 = new B(10);
         a1.m1();

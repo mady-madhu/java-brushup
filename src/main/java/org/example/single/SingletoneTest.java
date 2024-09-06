@@ -1,3 +1,5 @@
+package org.example.single;
+
 import org.example.single.SystemObj;
 
 import java.util.HashMap;

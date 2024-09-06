@@ -1,4 +1,4 @@
-package org.example;
+package org.example.inheritance;
 
 public interface InterfaceB {
     void m1();

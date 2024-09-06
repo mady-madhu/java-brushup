@@ -3,10 +3,7 @@ package org.example.logics;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -55,6 +52,11 @@ public class LogicsJava8 {
         List<Integer> ints1 = Arrays.stream(ints).boxed().collect(Collectors.toList());
         System.out.println(ints);
         System.out.println(ints1);
+
+        Optional<Integer> max = ints1.stream().max(Comparator.comparingInt(i->i));
+        System.out.println(max.get());
+
+        ints1.stream().sorted(Comparator.reverseOrder());
     }
 
     public void selectionSort(List<Integer> values){
@@ -73,5 +75,19 @@ public class LogicsJava8 {
         }
         Arrays.stream(array).forEach(System.out::println);
 
+    }
+
+
+    private void basicTest(){
+
+        //substring test
+        String str = "hello";
+        System.out.println(str.substring(0,3));
+        System.out.println(str.substring(3));
+
+        //exam test -  Q1
+        int x=5;
+        int y = ++x * 10;
+        System.out.println(y);
     }
 }

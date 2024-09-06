@@ -1,10 +1,13 @@
 package org.example.single;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+/**
+ * @author Madhu
+ */
 public class SystemObj {
+
 
     private static SystemObj systemObj= null;
 

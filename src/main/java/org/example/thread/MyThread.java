@@ -1,7 +1,5 @@
 package org.example.thread;
 
-import org.example.Employee;
-
 public class MyThread implements Runnable {
 
     @Override

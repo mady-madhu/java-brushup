@@ -1,7 +1,7 @@
-package org.example;
+package org.example.inheritance;
 
-import org.example.InterfaceA;
-import org.example.InterfaceB;
+import org.example.inheritance.InterfaceA;
+import org.example.inheritance.InterfaceB;
 
 public class Impl implements InterfaceA, InterfaceB {
     @Override
