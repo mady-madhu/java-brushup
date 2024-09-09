@@ -13,4 +13,10 @@ public class Employee {
     private int age;
     private int salary;
 
+    private Address address;
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }

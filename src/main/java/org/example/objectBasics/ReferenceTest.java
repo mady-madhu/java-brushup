@@ -1,6 +1,7 @@
 package org.example.objectBasics;
 
 
+import org.example.model.Address;
 import org.example.model.Employee;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.List;
 public class ReferenceTest {
 
     public static void main(String[] args) {
-        Employee employee = Employee.of(1, "aa", 27,1000);
+        Employee employee = Employee.of(1, "aa", 27,1000, Address.of("SLC","UT","USA"));
         changeEmployeeValues(employee);
         System.out.println(employee);
 

@@ -26,6 +26,7 @@ static
         ObjectTest e = new ObjectTest(10);
         e.m1(null);
 
+
         A a = new A(1);
         a.m1();
         A a1 = new B(10);
