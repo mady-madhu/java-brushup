@@ -1,12 +1,13 @@
 package org.example.thread;
 
 public class Printer {
+    //centralized signal for inter thread communication
     private volatile boolean isOdd;
 
     synchronized void printEven(int number) {
         while (!isOdd) {
             try {
-                wait();
+                wait();// Even thread will release the lock and wait for notification
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
@@ -19,7 +20,7 @@ public class Printer {
     synchronized void printOdd(int number) {
         while (isOdd) {
             try {
-                wait();
+                wait(); // odd thread will release the lock and wait for notification
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
