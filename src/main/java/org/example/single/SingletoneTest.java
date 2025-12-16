@@ -26,6 +26,8 @@ public class SingletoneTest {
         System.out.println(p.getProperty("vm1"));
         System.out.println(p.getProperty("vm2"));
 
+        SystemObj obj = new SystemObj();
+
 
     }
 }

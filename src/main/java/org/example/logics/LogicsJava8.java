@@ -12,7 +12,7 @@ public class LogicsJava8 {
 
     private List<Integer> items;
 
-    public void DistinctWordsInFile(){
+    public static void distinctWordsInFile(){
         String file = "src/main/resources/file_path_here.txt";
         Stream<String> str = null;
         try {
@@ -40,7 +40,7 @@ public class LogicsJava8 {
         Map<String, Long> finalMap = new LinkedHashMap<>();
         collect.entrySet()
                 .stream()
-                .sorted(Map.Entry.comparingByValue())
+                .sorted(Map.Entry.<String,Long>comparingByValue().reversed())
                 .forEachOrdered( m -> finalMap.put(m.getKey(),m.getValue()));
 
         System.out.println(finalMap);
@@ -78,7 +78,13 @@ public class LogicsJava8 {
     }
 
 
-    private void basicTest(){
+    public void runArraySoring(){
+        String[] strArray = new String[]{"hello","world"};
+
+    }
+
+
+    public static void basicTest(){
 
         //substring test
         String str = "hello";
@@ -89,5 +95,10 @@ public class LogicsJava8 {
         int x=5;
         int y = ++x * 10;
         System.out.println(y);
+    }
+
+
+    public static void main(String[] args) {
+        basicTest();
     }
 }

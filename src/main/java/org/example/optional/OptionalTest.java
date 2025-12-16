@@ -15,8 +15,17 @@ public class OptionalTest {
         System.out.println(helloNullable);
         System.out.println(helloNullable.isEmpty());
 
-        Optional<String> helloNull = Optional.of(null);
-        System.out.println(hello);
+        String easy = null;
+        String string = Optional.ofNullable(easy)
+                .map(String::toUpperCase)
+                .orElse("kelly");
+        System.out.println("string:"+string);
+
+        String sd = null;
+        String helloNull = Optional.of(sd).orElse("hell");
+        System.out.println("----------"+helloNull.isEmpty());
+        System.out.println("++++++++"+helloNull);
+
 
     }
 }

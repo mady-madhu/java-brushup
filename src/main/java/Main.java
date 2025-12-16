@@ -1,3 +1,5 @@
+import org.example.logics.LogicsJava8;
+
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -10,5 +12,15 @@ public class Main {
         integerStream.mapToInt(Integer::intValue).sum();
         integerStream.mapToInt(Integer::intValue).max();
 
+        /*int[] array = list.stream().mapToInt(Integer::intValue).toArray();
+
+
+        LogicsJava8 logic = new LogicsJava8();
+        logic.groupBYLogicFruits();
+        logic.basicTest();*/
+
     }
+
+
+
 }
