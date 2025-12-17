@@ -3,7 +3,7 @@ package org.example.logics;
 public class CountCharsInString {
 
     public static void main(String[] args) {
-        String str = "baa";
+        String str = "aabb";
         String countedString = getCountedString(str);
         System.out.println(countedString);
 
@@ -19,7 +19,7 @@ public class CountCharsInString {
                 count++;
             } else {
                 sb.append(currentChar).append(count);
-                currentChar = str.charAt(i+1);
+                currentChar = str.charAt(i);
                 count=1;
             }
         }
