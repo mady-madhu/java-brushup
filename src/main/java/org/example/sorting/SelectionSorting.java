@@ -29,5 +29,22 @@ public class SelectionSorting {
 
         Arrays.stream(values).forEach(System.out::println);
 
+        /**
+         *
+         * Time complexity
+         *
+         * Outer loop runs (n − 1) times.
+         *
+         * Inner loop compares the remaining elements:
+         *
+         * (n−1)+(n−2)+...+1=n(n−1)/2
+         * ⇒ O(n²) comparisons.
+         * Space complexity
+         *
+         * Extra variables: minIdx, minVal, curVal, temp ⇒ constant space.
+         * ⇒ O(1) auxiliary space.
+         *
+         */
+
     }
 }
