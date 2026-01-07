@@ -1,5 +1,7 @@
 package org.example.window;
 
+import java.util.Arrays;
+
 public class MaximumSumOfSubarray {
 
     public static int findMaxSumSubarray(int[] arr, int k) {
@@ -33,6 +35,7 @@ public class MaximumSumOfSubarray {
 
     public static void main(String[] args) {
         int[] arr = {2, 1, 5, 1, 3, 2};
+        //Arrays.sort();
         int k = 3;
         System.out.println("Maximum sum of a subarray of size " + k + ": " + findMaxSumSubarray(arr, k)); // Output: 9 (from [5, 1, 3])
     }
