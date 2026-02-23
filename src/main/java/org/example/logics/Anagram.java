@@ -16,6 +16,7 @@ public class Anagram {
         for (List<String> group : result) {
             System.out.println(group);
         }
+        System.out.println(result);
     }
 
     public static List<List<String>> getAnagrams(List<String> stringList){
