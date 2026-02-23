@@ -11,9 +11,11 @@ public class Impl implements InterfaceA, InterfaceB {
 
     @Override
     public void m() {
-        System.out.println("");
         InterfaceA.super.m();
     }
 
+    public static void main(String[] args) {
+        System.out.println("hello");
+    }
 
 }

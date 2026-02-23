@@ -21,6 +21,7 @@ public class ReferenceTest {
         changeTheList(list);
         System.out.println(list);
 
+
         int val = 10;
         changeValue(val);
         System.out.println(val);
@@ -35,6 +36,8 @@ public class ReferenceTest {
 
     }
 
+    //primitive datatype call by values means it has new copy of value with val -> value
+    //a copy of the actual value is created
     private static void changeValue(int val) {
         ++val;
 

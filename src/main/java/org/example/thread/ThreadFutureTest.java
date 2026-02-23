@@ -18,7 +18,6 @@ public class ThreadFutureTest {
         executorService.shutdown();
 
 
-
         //test question
         ExecutorService executorService1 = Executors.newSingleThreadExecutor();
         Future<Integer> future1 = executorService1.submit(() -> {

@@ -8,7 +8,9 @@ import java.util.Properties;
  */
 public class SystemObj {
 
+    private SystemObj(){
 
+    }
     private static SystemObj systemObj= null;
 
     public static SystemObj getSystemObj() {

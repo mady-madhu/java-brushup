@@ -9,7 +9,9 @@ public class CloneTest {
         Employee cloned = (Employee)e.clone();
 
         System.out.println(e);
+        System.out.println(e.hashCode());
         System.out.println(cloned);
+        System.out.println(cloned.hashCode());
 
         cloned.getAddress().setCity("Sandy");
 

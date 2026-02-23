@@ -7,7 +7,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Emp e = new Emp();
         Thread.Builder ofVirtual = Thread.ofVirtual().name("name",0);
         Thread virtualThread = ofVirtual.start(() -> {
             System.out.println("Virtual Thread");
@@ -15,6 +14,5 @@ public class Main {
         System.out.println(virtualThread);
         virtualThread.join();
 
-        var s = "";
     }
 }

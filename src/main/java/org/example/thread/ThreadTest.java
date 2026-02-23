@@ -11,8 +11,6 @@ public class ThreadTest {
         Thread t2 = new Thread(new TaskEvenOdd(p,10,false),"Odd");
         t1.start();
         t2.start();
-
-
     }
 
     public static void firstThreadDemo(){
