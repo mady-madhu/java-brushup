@@ -31,5 +31,6 @@ public class NameValue {
         System.out.println(test);
         test.changeMe(test);
         System.out.println(test);
+        System.out.println(test);
     }
 }
